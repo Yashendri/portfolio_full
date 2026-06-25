@@ -22,35 +22,46 @@ document.addEventListener('DOMContentLoaded', () => {
         appearOnScroll.observe(fader);
     });
 
+    // Theme Toggle Logic
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    // Check for saved theme or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme) {
+        body.setAttribute('data-theme', savedTheme);
+    } else if (savedTheme === null && !systemPrefersDark) {
+        body.setAttribute('data-theme', 'light');
+    } else {
+        body.setAttribute('data-theme', 'dark');
+    }
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = body.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        body.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme);
+    });
+
     // Mobile Menu Toggle implementation
     const menuToggle = document.getElementById('mobile-menu');
-    const navLinks = document.querySelector('.nav-links');
+    const navActions = document.querySelector('.nav-actions');
 
-    if(menuToggle && navLinks) {
+    if(menuToggle && navActions) {
         menuToggle.addEventListener('click', () => {
-            if(navLinks.style.display === 'flex') {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'flex';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '100%';
-                navLinks.style.left = '0';
-                navLinks.style.width = '100%';
-                navLinks.style.backgroundColor = 'rgba(17, 34, 80, 0.98)';
-                navLinks.style.padding = '2rem 0';
-                navLinks.style.textAlign = 'center';
-                navLinks.style.borderBottom = '1px solid rgba(224, 197, 143, 0.1)';
-            }
+            navActions.classList.toggle('active');
+            menuToggle.innerText = navActions.classList.contains('active') ? '✕' : '☰';
         });
 
         // Close mobile overlay on choice click
-        const navItems = navLinks.querySelectorAll('a');
+        const navItems = navActions.querySelectorAll('.nav-links a');
         navItems.forEach(item => {
             item.addEventListener('click', () => {
-                if(window.innerWidth <= 768) {
-                    navLinks.style.display = 'none';
-                }
+                navActions.classList.remove('active');
+                menuToggle.innerText = '☰';
             });
         });
     }
