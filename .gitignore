@@ -12,10 +12,12 @@ backend/.env
 Thumbs.db
 
 # Large build artifacts and binaries
-*.apk
 *.aab
 *.ipa
 *.exe
 *.zip
 *.tar
 *.gz
+
+# Keep the portfolio app available for download
+!frontend/assets/projects/app-debug.apk

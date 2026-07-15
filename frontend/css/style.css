@@ -284,6 +284,19 @@ body:not([data-theme="light"]) .mode-sun {
   color: var(--clr-text-light);
 }
 
+.btn-download {
+  background: linear-gradient(135deg, var(--clr-highlight) 0%, var(--clr-accent) 100%);
+  color: var(--clr-text-light);
+  box-shadow: 0 6px 20px rgba(232, 132, 92, 0.22);
+  font-weight: 600;
+}
+
+.btn-download:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(232, 132, 92, 0.3);
+  color: var(--clr-text-light);
+}
+
 .btn-outline {
   border: 1.5px solid var(--clr-accent);
   color: var(--clr-accent);
