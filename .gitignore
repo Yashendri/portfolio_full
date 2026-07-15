@@ -10,3 +10,12 @@ backend/.env
 # Mac / Windows system files
 .DS_Store
 Thumbs.db
+
+# Large build artifacts and binaries
+*.apk
+*.aab
+*.ipa
+*.exe
+*.zip
+*.tar
+*.gz
