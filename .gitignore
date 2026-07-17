@@ -20,4 +20,5 @@ Thumbs.db
 *.gz
 
 # Keep the portfolio app available for download
-!frontend/assets/projects/app-debug.apk
+!frontend/assets/projects/Cookmate_App.apk
+Cookmate_App.apk
