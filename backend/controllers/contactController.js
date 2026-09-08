@@ -21,18 +21,18 @@ exports.submitContactForm = async (req, res) => {
         from: process.env.EMAIL_USER,
         to: process.env.EMAIL_USER, // Sends it to yourself
         replyTo: email,             // This lets you click "Reply" and email the user back securely
-        subject: `🌐 New Portfolio Message from: ${email}`,
-        text: `You have a new message from a visitor.\n\nFrom: ${email}\n\nMessage:\n${message}`
+        subject: `🌐 Portfolio Message from: ${email}`,
+        text: `You have a new message from a portfolio visitor.\n\nFrom: ${email}\n\nMessage:\n${message}`
     };
 
     try {
         await transporter.sendMail(mailOptions);
         return res.status(200).json({ 
             success: true, 
-            message: "Connection initialized. Your message has safely landed." 
+            message: "Thank you for reaching out! Your message has been sent successfully." 
         });
     } catch (error) {
         console.error("Email sending error: ", error);
-        return res.status(500).json({ error: "Network severed. Our side could not relay the message." });
+        return res.status(500).json({ error: "Unable to send message right now. Please reach out directly to yashendrisenevirathna@gmail.com." });
     }
 };

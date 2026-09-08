@@ -18,34 +18,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Yashendri Senevirathna | Digital Marketing Internship Candidate | Sri
-      Lanka
+      Yashendri Senevirathna | Digital Marketing Intern | Sri Lanka
     </title>
     <meta
       name="description"
-      content="Portfolio of Yashendri Senevirathna, a Computer Science undergraduate at IIT pursuing a digital marketing internship. I focus on landing pages, campaign creative, and conversion testing."
+      content="Portfolio of Yashendri Senevirathna, a Computer Science undergraduate developing practical skills in digital marketing, creative content, analytics and digital experiences."
     />
     <meta
       property="og:title"
-      content="Yashendri Senevirathna | CS Undergraduate | Digital Marketing Internship Candidate"
+      content="Yashendri Senevirathna | Digital Marketing Intern | Sri Lanka"
     />
     <meta
       property="og:description"
-      content="I build landing pages, campaign assets, and conversion-focused marketing experiences that combine strategy, creative, and measurement."
+      content="Portfolio of Yashendri Senevirathna, a Computer Science undergraduate developing practical skills in digital marketing, creative content, analytics and digital experiences."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="./assets/og-image.jpg" />
+    <meta property="og:image" content="./assets/profile.jpeg" />
     <meta property="og:url" content="https://portfolioyashendri.vercel.app" />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
 
   <body>
-    <nav class="navbar">
+    <!-- Navbar -->
+    <nav class="navbar" aria-label="Main Navigation">
       <div class="container">
         <div class="logo-container">
-          <a href="#hero" class="logo">YS.</a>
+          <a href="#hero" class="logo" aria-label="Yashendri Senevirathna Home">YS.</a>
           <span class="badge-internship desktop-only"
-            >Open to Marketing Internships🟢</span
+            >Open to Marketing Internships 🟢</span
           >
         </div>
         <div class="nav-right">
@@ -53,7 +53,7 @@
             <ul class="nav-links">
               <li class="mobile-only">
                 <span class="badge-internship"
-                  >Open to Marketing Internships🟢</span
+                  >Open to Marketing Internships 🟢</span
                 >
               </li>
               <li class="mobile-only nav-download-item">
@@ -63,7 +63,10 @@
               </li>
               <li><a href="#hero">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#focus-areas">Focus</a></li>
+              <li><a href="#skills">Skills</a></li>
               <li><a href="#projects">Work</a></li>
+              <li><a href="#certifications">Certifications</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </div>
@@ -71,15 +74,23 @@
             <button
               id="theme-toggle"
               class="theme-toggle"
-              aria-label="Toggle theme"
+              aria-label="Toggle dark or light theme"
+              title="Toggle theme"
             >
-              <span class="theme-icon mode-sun">☀️</span>
-              <span class="theme-icon mode-moon">🌙</span>
+              <span class="theme-icon mode-sun" aria-hidden="true">☀️</span>
+              <span class="theme-icon mode-moon" aria-hidden="true">🌙</span>
             </button>
             <a href="./assets/cv.pdf" class="nav-download-cv" download
               >Download CV</a
             >
-            <div class="menu-toggle" id="mobile-menu">☰</div>
+            <button
+              class="menu-toggle"
+              id="mobile-menu"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+            >
+              ☰
+            </button>
           </div>
         </div>
       </div>
@@ -89,40 +100,59 @@
     <header class="section hero" id="hero">
       <div class="container hero-content fade-in">
         <div class="hero-text">
-          <p class="tagline">Digital Marketing Intern Candidate</p>
+          <div class="hero-pill-badge">
+            <span class="pulse-dot"></span>
+            <span>Digital Marketing & Creative Intern</span>
+          </div>
           <h1>Yashendri Senevirathna</h1>
           <div class="hero-meta">
             <span class="hero-role"
-              >Campaigns • Landing Pages • Conversion Optimization</span
+              >Digital Marketing • Content • Design • Analytics</span
             >
             <span class="hero-location">📍 Matara, Sri Lanka</span>
           </div>
-          <p class="subtitle">
-            Growth-focused marketing and campaign design that turns clicks into
-            leads.
+          <p class="hero-intro">
+            Computer Science undergraduate developing practical experience in digital marketing, creative content and digital experiences. I combine technical knowledge with creative and analytical thinking to create clear, audience-focused digital experiences.
           </p>
-          <p class="hero-desc">
-            I help brands grow with conversion-first landing pages, high-impact
-            ad creative, and measurement-led digital campaigns that turn traffic
-            into leads.
-          </p>
+          <div class="hero-differentiator">
+            <span class="diff-tag">Technical Advantage</span>
+            <span class="diff-text">A Computer Science background that gives me a distinct edge in understanding web architecture, data, and analytics behind marketing campaigns.</span>
+          </div>
           <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
             <a href="./assets/cv.pdf" class="btn btn-download" download
               >Download CV</a
             >
-            <a href="#projects" class="btn btn-primary">View Projects</a>
-            <a href="#contact" class="hero-secondary-link">Contact me →</a>
+            <a href="#contact" class="hero-secondary-link">Contact Me →</a>
           </div>
-          <div style="margin-top: 1.25rem" class="hero-socials">
+          <div class="hero-socials">
+            <a
+              href="https://www.linkedin.com/in/yashendri"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn Profile"
+              class="social-link-item"
+            >
+              <span class="social-icon">IN</span>
+              <span class="social-label">LinkedIn</span>
+            </a>
+            <a
+              href="mailto:yashendrisenevirathna@gmail.com"
+              aria-label="Send Email"
+              class="social-link-item"
+            >
+              <span class="social-icon">EM</span>
+              <span class="social-label">Email</span>
+            </a>
             <a
               href="https://github.com/Yashendri"
               target="_blank"
-              aria-label="GitHub"
+              rel="noopener noreferrer"
+              aria-label="GitHub Profile"
+              class="social-link-item"
             >
               <span class="social-icon">GH</span>
-            </a>
-            <a href="mailto:yashendrisenevirathna@gmail.com" aria-label="Email">
-              <span class="social-icon">EM</span>
+              <span class="social-label">GitHub</span>
             </a>
           </div>
         </div>
@@ -130,28 +160,33 @@
           <div class="profile-img-container">
             <img
               src="./assets/profile.jpeg"
-              alt="Yashendri Senevirathna"
+              alt="Yashendri Senevirathna - Digital Marketing & Creative Intern"
               class="profile-img"
+              loading="eager"
             />
           </div>
         </div>
       </div>
     </header>
 
-    <!-- Ticker Section -->
-    <div class="ticker-container">
+    <!-- Continuous Marquee Ticker Section -->
+    <div class="ticker-container" aria-hidden="true">
       <div class="ticker-content">
         <div class="ticker-group">
-          <span class="ticker-item">Landing Pages</span>
-          <span class="ticker-item">Ad Creative Design</span>
-          <span class="ticker-item">Conversion Funnels</span>
-          <span class="ticker-item">AI-Powered Marketing Builds</span>
+          <span class="ticker-item">Digital Marketing</span>
+          <span class="ticker-item">Creative & Content</span>
+          <span class="ticker-item">Analytics</span>
+          <span class="ticker-item">Digital Experiences</span>
+          <span class="ticker-item">Technical Foundation</span>
+          <span class="ticker-item">Campaign Concepts</span>
         </div>
         <div class="ticker-group">
-          <span class="ticker-item">Landing Pages</span>
-          <span class="ticker-item">Ad Creative Design</span>
-          <span class="ticker-item">Conversion Funnels</span>
-          <span class="ticker-item">AI-Powered Marketing Builds</span>
+          <span class="ticker-item">Digital Marketing</span>
+          <span class="ticker-item">Creative & Content</span>
+          <span class="ticker-item">Analytics</span>
+          <span class="ticker-item">Digital Experiences</span>
+          <span class="ticker-item">Technical Foundation</span>
+          <span class="ticker-item">Campaign Concepts</span>
         </div>
       </div>
     </div>
@@ -159,312 +194,580 @@
     <!-- About Section -->
     <section class="section" id="about">
       <div class="container fade-in">
-        <h2 class="section-title">About</h2>
+        <h2 class="section-title">About Me</h2>
+        <p class="section-subtitle">
+          Bridging creative digital marketing with a technical perspective.
+        </p>
         <div class="about-grid">
           <div class="story-text">
-            <h3>Who I Am</h3>
             <p>
-              Computer Science undergraduate at University of Westminster (via
-              IIT), currently seeking a digital marketing internship. I am
-              focused on marketing campaigns, landing page conversion, and
-              audience-first messaging.
+              I'm a Computer Science undergraduate who has become increasingly interested in the creative and marketing side of digital products.
+            </p>
+            <p>
+              I enjoy understanding how people interact with websites and digital content, how brands communicate online, and how design, content and data can work together.
+            </p>
+            <p>
+              My technical background gives me a different perspective on digital marketing, while my growing experience in design, analytics and content allows me to approach digital projects from both creative and technical sides.
+            </p>
+            <p>
+              I'm currently looking for an internship where I can learn from an experienced marketing team, contribute to real projects and continue developing my skills.
             </p>
 
-            <h3>What I Work With</h3>
-            <p>
-              I combine marketing strategy, design, and analytics to create
-              landing pages, campaign assets and conversion paths that drive
-              measurable results.
-            </p>
-
-            <h3>What Interests Me</h3>
-            <p>
-              Growth experiments, ad creative testing, conversion copy,
-              performance-driven landing pages, and clear measurement across the
-              customer journey.
-            </p>
+            <div class="target-roles-box">
+              <h4>Target Internship Opportunities</h4>
+              <div class="roles-pills">
+                <span class="role-pill">Digital Marketing Intern</span>
+                <span class="role-pill">Social Media Intern</span>
+                <span class="role-pill">Marketing Intern</span>
+                <span class="role-pill">Content Marketing Intern</span>
+                <span class="role-pill">Creative / Digital Intern</span>
+                <span class="role-pill">Junior Digital Marketing</span>
+              </div>
+            </div>
           </div>
 
-          <div class="skills-wrapper">
-            <div class="skill-box">
-              <h3>Marketing & Strategy</h3>
-              <ul>
-                <li>Landing page funnels • Ad creative testing</li>
-                <li>Audience messaging • Brand positioning</li>
-                <li>Google Analytics 4 (hands-on) • A/B test design</li>
+          <div class="about-sidebar">
+            <div class="profile-card">
+              <h3>Academic & Personal Profile</h3>
+              <ul class="profile-meta-list">
                 <li>
-                  Email sequence design (Nodemailer) • Meta Ads
-                  Management(learning)
+                  <span class="meta-label">Education</span>
+                  <span class="meta-value">
+                    <strong>BSc (Hons) Computer Science</strong><br />
+                    University of Westminster, UK<br />
+                    <small>Delivered via Informatics Institute of Technology (IIT), Colombo</small><br />
+                    <span class="badge-subtle">2024–Present • Currently in Internship Year</span>
+                  </span>
+                </li>
+                <li>
+                  <span class="meta-label">Location</span>
+                  <span class="meta-value">Matara, Sri Lanka</span>
+                </li>
+                <li>
+                  <span class="meta-label">Languages</span>
+                  <span class="meta-value">English (Fluent) • Sinhala (Native)</span>
+                </li>
+                <li>
+                  <span class="meta-label">Differentiator</span>
+                  <span class="meta-value">
+                    Understanding frontend web technology, databases, and code structure enables me to connect campaign messaging directly with website UX and analytics event tracking.
+                  </span>
                 </li>
               </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            <div class="skill-box" style="margin-top: 1.25rem">
-              <h3>Creative & AI Tools</h3>
-              <ul>
-                <li>Canva • Figma • Leonardo.ai • Claude AI</li>
-                <li>Landing pages • Visual storytelling</li>
-              </ul>
+    <!-- Focus Areas / What I Do Section -->
+    <section class="section focus-section" id="focus-areas">
+      <div class="container fade-in">
+        <h2 class="section-title">Areas of Focus</h2>
+        <p class="section-subtitle">
+          Four interconnected areas guiding my learning, projects, and career direction.
+        </p>
+        <div class="focus-grid">
+          <div class="focus-card">
+            <div class="focus-icon">📣</div>
+            <h3>Digital Marketing</h3>
+            <p class="focus-desc">
+              Developing audience-first messaging, social media marketing workflows, and on-page SEO fundamentals to connect brands with their communities.
+            </p>
+            <div class="focus-tags">
+              <span>Social Media</span>
+              <span>SEO Fundamentals</span>
+              <span>Content</span>
+              <span>Audience Research</span>
             </div>
+          </div>
 
-            <div
-              class="skill-box supporting-skill-box"
-              style="margin-top: 1.25rem"
-            >
-              <h3>Technical Arsenal</h3>
-              <ul>
-                <li>HTML • CSS • JavaScript • Git</li>
-                <li>React • Firebase • EmailJS</li>
-              </ul>
+          <div class="focus-card">
+            <div class="focus-icon">🎨</div>
+            <h3>Creative & Content</h3>
+            <p class="focus-desc">
+              Crafting visual identities, social media assets, and structured copy that communicate value clearly across feeds, carousels, and email sequences.
+            </p>
+            <div class="focus-tags">
+              <span>Brand Identity</span>
+              <span>Visual Design</span>
+              <span>Canva</span>
+              <span>Content Concepts</span>
+            </div>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon">📊</div>
+            <h3>Analytics</h3>
+            <p class="focus-desc">
+              Implementing measurement frameworks, custom GA4 events, and user interaction tracking to understand audience behavior and test hypotheses.
+            </p>
+            <div class="focus-tags">
+              <span>Google Analytics 4</span>
+              <span>Basic Reporting</span>
+              <span>Measurement</span>
+              <span>Testing Concepts</span>
+            </div>
+          </div>
+
+          <div class="focus-card">
+            <div class="focus-icon">💻</div>
+            <h3>Digital Experiences</h3>
+            <p class="focus-desc">
+              Bringing user experience thinking and modern frontend skills together to design clean, responsive, and accessible landing pages.
+            </p>
+            <div class="focus-tags">
+              <span>Landing Pages</span>
+              <span>Web Design</span>
+              <span>UX Thinking</span>
+              <span>Technical Implementation</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!--
-    <section class="section" id="creative-design">
-        <div class="container fade-in">
-            <h2 class="section-title">Creative & Ad Design</h2>
-            <p style="text-align: center; margin-bottom: 3rem; max-width: 600px; margin-inline: auto;">
-                Scroll-stopping social and ad creatives built with AI image tools and Canva.
-            </p>
-            <div class="creative-grid">
-                <div class="creative-item">
-                    <img src="./assets/projects/ad-creative-1.png" alt="Ad Creative 1">
-                    <p class="creative-caption">Meta feed creative for ecommerce founders, using urgency-led launch messaging to drive awareness.</p>
-                </div>
-                <div class="creative-item">
-                    <img src="./assets/projects/ad-creative-2.png" alt="Ad Creative 2">
-                    <p class="creative-caption">Instagram story concept for wellness seekers, highlighting convenience and confidence in the offer.</p>
-                </div>
-                <div class="creative-item">
-                    <img src="./assets/projects/ad-creative-3.png" alt="Ad Creative 3">
-                    <p class="creative-caption">Facebook carousel for service brands, focusing on trust-building benefits and a clear next step.</p>
-                </div>
-                <div class="creative-item">
-                    <img src="./assets/projects/ad-creative-4.jpg" alt="Ad Creative 4">
-                    <p class="creative-caption">Reels-style social ad for growth-minded founders, using a strong problem-solution hook to spark engagement.</p>
-                </div>
-                <div class="creative-item">
-                    <img src="./assets/projects/ad-creative-5.jpg" alt="Ad Creative 5">
-                    <p class="creative-caption">LinkedIn sponsored post aimed at B2B decision makers, showcasing efficiency and credibility.</p>
-                </div>
-                <div class="creative-item">
-                    <img src="./assets/projects/ad-creative-6.jpg" alt="Ad Creative 6">
-                    <p class="creative-caption">Pinterest-style creative for entrepreneurs, promoting brand discovery with aspirational visuals.</p>
-                </div>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+      <div class="container fade-in">
+        <h2 class="section-title">Skills & Toolset</h2>
+        <p class="section-subtitle">
+          Organized into marketing, creative, technical, and productivity capabilities.
+        </p>
+        <div class="skills-grid">
+          <!-- Digital Marketing & Analytics -->
+          <div class="skills-card">
+            <div class="skills-header">
+              <span class="skills-header-icon">📈</span>
+              <h3>Digital Marketing & Analytics</h3>
             </div>
-        </div>
-    </section> -->
+            <ul class="skills-pill-list">
+              <li>Google Analytics 4</li>
+              <li>Social Media Marketing</li>
+              <li>SEO Fundamentals</li>
+              <li>Content Creation</li>
+              <li>Basic Reporting</li>
+              <li>Data Interpretation</li>
+              <li>A/B Testing Concepts</li>
+              <li>Email Sequence Design</li>
+            </ul>
+          </div>
 
-    <!-- Projects Section -->
+          <!-- Design & Creative -->
+          <div class="skills-card">
+            <div class="skills-header">
+              <span class="skills-header-icon">✨</span>
+              <h3>Design & Creative</h3>
+            </div>
+            <ul class="skills-pill-list">
+              <li>Canva</li>
+              <li>Figma (Basic)</li>
+              <li>Visual Design</li>
+              <li>Brand Identity</li>
+              <li>Typography</li>
+              <li>Colour Systems</li>
+            </ul>
+          </div>
+
+          <!-- Technical (Differentiator) -->
+          <div class="skills-card technical-skills-card">
+            <div class="skills-header">
+              <span class="skills-header-icon">⚙️</span>
+              <div class="technical-header-wrap">
+                <h3>Technical (Differentiator)</h3>
+                <span class="badge-diff">CS Foundation</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>React Native</li>
+              <li>Node.js</li>
+              <li>Firebase</li>
+              <li>SQL</li>
+              <li>Git / GitHub</li>
+            </ul>
+          </div>
+
+          <!-- AI-Assisted Tools -->
+          <div class="skills-card">
+            <div class="skills-header">
+              <span class="skills-header-icon">🤖</span>
+              <div class="technical-header-wrap">
+                <h3>AI-Assisted Tools</h3>
+                <span class="badge-subtle">Productivity & Ideation</span>
+              </div>
+            </div>
+            <ul class="skills-pill-list">
+              <li>ChatGPT</li>
+              <li>Claude AI</li>
+              <li>GitHub Copilot</li>
+            </ul>
+            <p class="skills-note">
+              Used responsibly for rapid ideation, copy drafting variations, and workflow productivity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Work Section -->
     <section class="section" id="projects">
       <div class="container fade-in">
-        <h2 class="section-title">Impact & Case Studies</h2>
-        <div class="grid-3">
-          <!-- Project 1 -->
-          <div class="card modal-trigger" data-modal="modal-dropswift">
-            <div class="card-img-placeholder">
-              <img
-                src="./assets/projects/dropswift-screenshot.png"
-                alt="DropSwift Preview"
-                class="card-thumb"
-              />
-            </div>
-            <h3>DropSwift — SaaS Landing Page + Ad Campaign</h3>
-            <p>
-              Full campaign package for an ecommerce automation SaaS with
-              matching ad creatives.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">Design</span>
-              <span class="tag">AI-Built</span>
-              <span class="tag">Ad Creative</span>
-            </div>
-            <div class="card-actions">
-              <a
-                href="https://dropswiftlandingpage.netlify.app/"
-                target="_blank"
-                class="btn-card-action"
-                >Live Demo</a
-              >
-              <button
-                class="btn-card-action secondary modal-trigger"
-                data-modal="modal-dropswift"
-              >
-                View Details
-              </button>
-            </div>
-          </div>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-subtitle">
+          Landing page concepts, customer communication workflows, and social media campaigns.
+        </p>
 
-          <!-- Project 2 -->
-          <div class="card modal-trigger" data-modal="modal-portfolio">
-            <div class="card-img-placeholder">
-              <img
-                src="./assets/projects/portfolio-screenshot.png"
-                alt="Portfolio Preview"
-                class="card-thumb"
-              />
-            </div>
-            <h3>Personal Portfolio</h3>
-            <p>
-              A self-branded portfolio focusing on structured SEO and lead
-              conversion.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">Branding</span>
-              <span class="tag">EmailJS</span>
-            </div>
-            <div class="card-actions">
-              <a
-                href="https://portfolioyashendri.vercel.app"
-                target="_blank"
-                class="btn btn-outline btn-sm"
-                >Live Demo
-              </a>
-              <a
-                href="https://github.com/Yashendri/portfolio_full"
-                target="_blank"
-                class="btn-card-action secondary"
-                >GitHub</a
-              >
-              <button
-                class="btn-card-action secondary modal-trigger"
-                data-modal="modal-portfolio"
-              >
-                View Details
-              </button>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="card modal-trigger" data-modal="modal-stella">
-            <div class="card-img-placeholder">
+        <div class="projects-grid">
+          <!-- Project 1: Stella Fit -->
+          <div class="project-card">
+            <div class="project-img-wrap">
               <img
                 src="./assets/projects/stella-fit-screenshot.png"
-                alt="Stella Fit Preview"
-                class="card-thumb"
+                alt="Stella Fit Landing Page Preview"
+                class="project-thumb"
+                loading="lazy"
               />
+              <div class="project-badge-overlay">
+                <span class="badge-type concept">Concept Project</span>
+              </div>
             </div>
-            <h3>Stella Fit — Personal Training Landing Page</h3>
-            <p>
-              Built for a female-focused fitness brand with hand-tuned
-              typography and branding.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">Design</span>
-              <span class="tag">AI-Built</span>
-              <span class="tag">Branding</span>
-            </div>
-            <div class="card-actions">
-              <a
-                href="https://stellafitlandingpage.netlify.app/"
-                target="_blank"
-                class="btn-card-action"
-                >Live Demo</a
-              >
-              <button
-                class="btn-card-action secondary modal-trigger"
-                data-modal="modal-stella"
-              >
-                View Details
-              </button>
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-role-tag">Designer & Developer</span>
+              </div>
+              <h3>Stella Fit — Landing Page & Marketing Concept</h3>
+              <p class="project-desc">
+                A fictional personal training brand created to explore branding, landing-page design, and audience-focused messaging tailored to fitness discovery calls.
+              </p>
+              <div class="project-tools">
+                <span class="tool-tag">HTML</span>
+                <span class="tool-tag">CSS</span>
+                <span class="tool-tag">JavaScript</span>
+                <span class="tool-tag">Canva</span>
+                <span class="tool-tag">Claude AI</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://stellafitlandingpage.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-action"
+                  >Live Demo ↗</a
+                >
+                <button
+                  class="btn-card-action secondary modal-trigger"
+                  data-modal="modal-stella"
+                >
+                  View Case Study
+                </button>
+              </div>
             </div>
           </div>
 
-          <!-- Project 4 -->
+          <!-- Project 2: DropSwift -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img
+                src="./assets/projects/dropswift-screenshot.png"
+                alt="DropSwift SaaS Landing Page Preview"
+                class="project-thumb"
+                loading="lazy"
+              />
+              <div class="project-badge-overlay">
+                <span class="badge-type concept">Concept Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-role-tag">Designer & Developer</span>
+              </div>
+              <h3>DropSwift — Website & Customer Communication Concept</h3>
+              <p class="project-desc">
+                Full landing page concept and three-stage customer email sequence for an ecommerce automation SaaS product, demonstrating multi-touchpoint customer journey thinking.
+              </p>
+              <div class="project-tools">
+                <span class="tool-tag">HTML</span>
+                <span class="tool-tag">CSS</span>
+                <span class="tool-tag">JavaScript</span>
+                <span class="tool-tag">Canva</span>
+                <span class="tool-tag">Nodemailer</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://dropswiftlandingpage.netlify.app/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-action"
+                  >Live Demo ↗</a
+                >
+                <button
+                  class="btn-card-action secondary modal-trigger"
+                  data-modal="modal-dropswift"
+                >
+                  View Case Study
+                </button>
+              </div>
+            </div>
+          </div>
 
-          <div class="card modal-trigger" data-modal="modal-cookmate">
-            <div class="card-img-placeholder">
+          <!-- Project 3: Social Media Campaign (New) -->
+          <div class="project-card">
+            <div class="project-img-wrap project-img-placeholder-social">
+              <div class="social-preview-graphic">
+                <div class="social-preview-top">
+                  <span class="social-brand-title">Aarya Coastal Retreat & Villas</span>
+                  <span class="social-brand-loc">Southern Coast, Sri Lanka</span>
+                </div>
+                <div class="social-preview-chips">
+                  <span class="social-chip">10-Day Calendar</span>
+                  <span class="social-chip">Reels & Carousels</span>
+                  <span class="social-chip">Meta Ad Concept</span>
+                </div>
+              </div>
+              <div class="project-badge-overlay">
+                <span class="badge-type concept">Concept Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-role-tag">Social Media Strategist & Content Creator</span>
+              </div>
+              <h3>Social Media Campaign — Boutique Hospitality & Lifestyle</h3>
+              <p class="project-desc">
+                Comprehensive social media launch concept for a fictional Sri Lankan boutique eco-resort, featuring audience targeting, a 10-day content calendar, post concepts, and measurement plan.
+              </p>
+              <div class="project-tools">
+                <span class="tool-tag">Canva</span>
+                <span class="tool-tag">Content Planning</span>
+                <span class="tool-tag">Meta Business Suite Concepts</span>
+              </div>
+              <div class="project-actions">
+                <button
+                  class="btn-card-action modal-trigger"
+                  data-modal="modal-social"
+                >
+                  View Campaign Breakdown
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4: Personal Portfolio -->
+          <div class="project-card">
+            <div class="project-img-wrap">
+              <img
+                src="./assets/projects/portfolio-screenshot.png"
+                alt="Personal Portfolio Preview"
+                class="project-thumb"
+                loading="lazy"
+              />
+              <div class="project-badge-overlay">
+                <span class="badge-type personal">Personal Project</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-meta-top">
+                <span class="project-role-tag">Designer & Developer</span>
+              </div>
+              <h3>Personal Portfolio Website</h3>
+              <p class="project-desc">
+                Responsive portfolio built to showcase creative work, incorporating a clean visual design system, on-page SEO best practices, and real Google Analytics 4 integration.
+              </p>
+              <div class="project-tools">
+                <span class="tool-tag">HTML</span>
+                <span class="tool-tag">CSS</span>
+                <span class="tool-tag">JavaScript</span>
+                <span class="tool-tag">Google Analytics 4</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://portfolioyashendri.vercel.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-action"
+                  >Live Demo ↗</a
+                >
+                <a
+                  href="https://github.com/Yashendri/portfolio_full"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-card-action secondary"
+                  >GitHub ↗</a
+                >
+                <button
+                  class="btn-card-action secondary modal-trigger"
+                  data-modal="modal-portfolio"
+                >
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Website Analytics Mini Project Spotlight -->
+        <div class="analytics-spotlight-card fade-in">
+          <div class="analytics-header">
+            <div class="analytics-badge-wrap">
+              <span class="badge-type personal">Personal Project / Framework</span>
+              <span class="analytics-tag">Measurement Mindset</span>
+            </div>
+            <h3>Website Analytics Mini Project</h3>
+            <p class="analytics-sub">
+              An honest exploration of web measurement: tracking visitor interactions, understanding traffic sources, and turning data into actionable recommendations.
+            </p>
+          </div>
+
+          <div class="analytics-framework-grid">
+            <div class="framework-step">
+              <div class="step-num">01</div>
+              <h4>Objective</h4>
+              <p>Understand how visitors interact with the site and identify where potential internship recruiters drop off or engage.</p>
+            </div>
+            <div class="framework-step">
+              <div class="step-num">02</div>
+              <h4>Tracking Setup</h4>
+              <p>Google Analytics 4 tag configured with custom event tracking for button clicks (CV download, live demos) and scroll depth.</p>
+            </div>
+            <div class="framework-step">
+              <div class="step-num">03</div>
+              <h4>Metrics Tracked</h4>
+              <p>Users, Sessions, Traffic Channels (Direct, Organic, LinkedIn, Referral), Engagement Time, and CTA Click Events.</p>
+            </div>
+            <div class="framework-step">
+              <div class="step-num">04</div>
+              <h4>Recommendation</h4>
+              <p>Form hypotheses to refine hero clarity, streamline mobile navigation, and position primary CTAs where engagement is highest.</p>
+            </div>
+          </div>
+          <p class="analytics-framework-note">
+            <em>Note: This is an example analysis framework based on my actual Google Analytics 4 integration (Measurement ID: G-NEQ3XWG5LH), illustrating measurement methodology rather than fabricated conversion stats.</em>
+          </p>
+        </div>
+
+        <!-- Technical Projects Subsection -->
+        <div class="technical-projects-section fade-in">
+          <div class="tech-section-header">
+            <h3>Technical Projects</h3>
+            <p>Practical software engineering and collaborative teamwork from my Computer Science studies.</p>
+          </div>
+
+          <div class="technical-project-card">
+            <div class="tech-card-left">
               <img
                 src="./assets/projects/cookmate-screenshot.png"
-                alt="CookMate Preview"
-                class="card-thumb"
+                alt="CookMate App Preview"
+                class="tech-thumb"
+                loading="lazy"
               />
             </div>
-            <h3>CookMate – Smart Cooking Assistant</h3>
-            <p>
-              A culinary application utilizing personalization and filtering to
-              hook users.
-            </p>
-            <div class="skill-tags">
-              <span class="tag">Retention</span>
-              <span class="tag">Node.js</span>
-            </div>
-            <div class="card-actions">
-              <a
-                href="https://github.com/Yashendri/portfolio_full/releases/latest/download/Cookmate_App.apk"
-                download
-                class="btn-card-action"
-                >Download App</a
-              >
-              <button
-                class="btn-card-action secondary modal-trigger"
-                data-modal="modal-cookmate"
-              >
-                View Details
-              </button>
+            <div class="tech-card-right">
+              <div class="project-badge-overlay inline">
+                <span class="badge-type team">Academic / Team Project</span>
+              </div>
+              <h4>CookMate – Smart Cooking Assistant</h4>
+              <p class="tech-role"><strong>Role:</strong> Backend Developer (Student Team Project)</p>
+              <p class="tech-desc">
+                A personalized recipe discovery mobile application. My core focus was architecting backend security, implementing Firebase user authentication, Google Sign-In, secure email OTP password reset with anti-enumeration protection, and Firestore schema for user favorites and dietary filters.
+              </p>
+              <div class="project-tools">
+                <span class="tool-tag">React Native</span>
+                <span class="tool-tag">TypeScript</span>
+                <span class="tool-tag">Node.js</span>
+                <span class="tool-tag">Firebase</span>
+                <span class="tool-tag">Firestore</span>
+                <span class="tool-tag">Git / GitHub</span>
+              </div>
+              <div class="project-actions">
+                <a
+                  href="https://github.com/Yashendri/portfolio_full/releases/latest/download/Cookmate_App.apk"
+                  download
+                  class="btn-card-action"
+                  >Download APK ↗</a
+                >
+                <button
+                  class="btn-card-action secondary modal-trigger"
+                  data-modal="modal-cookmate"
+                >
+                  View Details
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Process Section -->
-    <section class="section" id="process">
-      <div class="container fade-in">
-        <h2 class="section-title">My Process</h2>
-        <div class="grid-3 process-grid">
-          <div class="card process-card">
-            <h3>Research</h3>
-            <p>Understand audience and goals before designing.</p>
-          </div>
-          <div class="card process-card">
-            <h3>Design</h3>
-            <p>Create visuals and interaction structure in Figma/Canva.</p>
-          </div>
-          <div class="card process-card">
-            <h3>Build</h3>
-            <p>Develop responsive experiences and production-ready assets.</p>
-          </div>
-          <div class="card process-card">
-            <h3>Improve</h3>
-            <p>Refine based on feedback, metrics and usability tests.</p>
-          </div>
-        </div>
-      </div>
-    </section>
     <!-- Certifications Section -->
-    <section class="section" id="certifications">
+    <section class="section cert-section" id="certifications">
       <div class="container fade-in">
-        <h2 class="section-title">Actively Certifying In</h2>
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">
+          Verified industry credentials and ongoing skill development.
+        </p>
         <div class="cert-grid">
+          <!-- Cert 1: GA4 -->
           <div class="cert-card">
-            <h4>Google Analytics 4</h4>
-            <p>Skillshop certification</p>
-            <span class="cert-date" style="font-style: italic"
-              ><a
-                href="https://skillshop.credential.net/6a37b31b-ead9-4a1f-b243-346ab72b4c5f"
+            <div class="cert-badge-row">
+              <span class="cert-status-badge certified">Certified ✅</span>
+            </div>
+            <h4>Google Analytics 4 Certification</h4>
+            <p class="cert-issuer">Google Skillshop</p>
+            <p class="cert-desc">
+              Demonstrates proficiency in setting up GA4 properties, defining custom events, analyzing reports, and interpreting acquisition and audience metrics.
+            </p>
+            <div class="cert-footer">
+              <a
+                href="https://skillshop.credential.net/6a37b31b-ead9-4a1f-b243-346ab72b4c5f?record_view=true"
                 target="_blank"
+                rel="noopener noreferrer"
+                class="cert-verify-link"
               >
-                ✅ Google Analytics 4 — Certified (Verify ↗)
-              </a></span
-            >
+                View Certificate ↗
+              </a>
+            </div>
           </div>
+
+          <!-- Cert 2: HubSpot -->
           <div class="cert-card">
-            <h4>Meta Blueprint</h4>
-            <p>Facebook Ads Certification</p>
-            <span class="cert-date" style="font-style: italic"
-              >In Progress</span
-            >
+            <div class="cert-badge-row">
+              <span class="cert-status-badge certified">Certified ✅</span>
+            </div>
+            <h4>Social Media Marketing Certification</h4>
+            <p class="cert-issuer">HubSpot Academy</p>
+            <p class="cert-desc">
+              Covers social media strategy development, audience engagement, content planning, listening, monitoring, and measuring ROI on social channels.
+            </p>
+            <div class="cert-footer">
+              <a
+                href="https://app-na2.hubspot.com/academy/achievements/d8ntxjm5/en/1/yashendri-senevirathna/social-media-certified"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="cert-verify-link"
+              >
+                View Certificate ↗
+              </a>
+            </div>
           </div>
-          <div class="cert-card">
-            <h4>HubSpot Academy</h4>
-            <p>Inbound Marketing</p>
-            <span class="cert-date" style="font-style: italic"
-              >In Progress</span
-            >
+
+          <!-- Cert 3: Meta Blueprint -->
+          <div class="cert-card cert-in-progress">
+            <div class="cert-badge-row">
+              <span class="cert-status-badge in-progress">In Progress ⏳</span>
+            </div>
+            <h4>Meta Digital Marketing Associate</h4>
+            <p class="cert-issuer">Meta Blueprint</p>
+            <p class="cert-desc">
+              Currently studying core concepts of Meta advertising: campaign objectives, audience targeting (Core, Custom, Lookalike), ad formats across Facebook/Instagram, and Ads Manager reporting.
+            </p>
+            <div class="cert-footer">
+              <span class="cert-progress-text">Active Self-Paced Study</span>
+            </div>
           </div>
         </div>
       </div>
@@ -474,42 +777,44 @@
     <section class="section contact-section" id="contact">
       <div class="container fade-in">
         <h2 class="section-title">Let's Connect</h2>
-        <p
-          style="
-            text-align: center;
-            margin-bottom: 1.5rem;
-            max-width: 700px;
-            margin-inline: auto;
-          "
-        >
-          Interested in a digital marketing internship or campaign support?
-          Reach out and I’ll respond quickly to opportunities in marketing,
-          growth, and brand communication.
+        <p class="contact-intro">
+          I'm currently looking for a digital marketing internship where I can learn, contribute and grow with an experienced team. Whether you have an opportunity or just want to connect, feel free to reach out.
         </p>
-        <div
-          style="
-            text-align: center;
-            margin-bottom: 2rem;
-            color: var(--clr-text-secondary);
-          "
-        >
-          <strong>Email:</strong>
-          <a href="mailto:yashendrisenevirathna@gmail.com"
-            >yashendrisenevirathna@gmail.com</a
+
+        <!-- Direct Contact Buttons -->
+        <div class="contact-cta-buttons">
+          <a
+            href="mailto:yashendrisenevirathna@gmail.com"
+            class="btn btn-primary"
           >
-          &nbsp;•&nbsp; <strong>GitHub:</strong>
-          <a href="https://github.com/Yashendri" target="_blank"
-            >github.com/Yashendri</a
+            ✉️ Email Me
+          </a>
+          <a
+            href="https://www.linkedin.com/in/yashendri"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline"
           >
+            💼 Connect on LinkedIn
+          </a>
+          <a href="./assets/cv.pdf" class="btn btn-download" download>
+            📄 Download CV
+          </a>
         </div>
-        <form id="contactForm" class="contact-form">
+
+        <div class="contact-divider">
+          <span>Or send a direct message below</span>
+        </div>
+
+        <!-- Contact Form -->
+        <form id="contactForm" class="contact-form" novalidate>
           <div class="form-group">
-            <label for="email">Email Address</label>
+            <label for="email">Your Email Address</label>
             <input
               type="email"
               id="email"
               class="form-control"
-              placeholder="hello@network.com"
+              placeholder="e.g. recruiter@company.com"
               required
             />
           </div>
@@ -518,14 +823,14 @@
             <textarea
               id="message"
               class="form-control"
-              placeholder="Drop your message here - I'd love to hear from you"
+              placeholder="Hi Yashendri, we'd like to discuss an internship opportunity..."
               required
             ></textarea>
           </div>
-          <button type="submit" class="btn btn-primary" style="width: 100%">
-            Connect
+          <button type="submit" class="btn btn-primary btn-submit">
+            Send Message
           </button>
-          <div id="formMessage"></div>
+          <div id="formMessage" role="alert"></div>
         </form>
       </div>
     </section>
@@ -534,20 +839,30 @@
     <footer class="footer">
       <div class="container footer-content">
         <div class="footer-logo">YS.</div>
-        <p class="footer-tagline">Bridging Code & Conversion.</p>
+        <p class="footer-tagline">
+          Computer Science Undergraduate • Digital Marketing & Creative Intern
+        </p>
         <div class="footer-nav">
           <a href="#hero">Home</a>
           <a href="#about">About</a>
+          <a href="#focus-areas">Focus</a>
+          <a href="#skills">Skills</a>
           <a href="#projects">Work</a>
+          <a href="#certifications">Certifications</a>
           <a href="#contact">Contact</a>
         </div>
-        <p class="footer-text">
-          &copy; 2026 Yashendri Senevirathna. Crafted with purpose.
-        </p>
         <div class="footer-socials">
+          <a
+            href="https://www.linkedin.com/in/yashendri"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+            >LinkedIn</a
+          >
           <a
             href="https://github.com/Yashendri"
             target="_blank"
+            rel="noopener noreferrer"
             aria-label="GitHub"
             >GitHub</a
           >
@@ -555,176 +870,34 @@
             >Email</a
           >
         </div>
+        <p class="footer-text">
+          &copy; 2026 Yashendri Senevirathna. Built with care.
+        </p>
       </div>
     </footer>
 
-    <!-- Modals -->
-
-    <!-- Portfolio Modal -->
-    <div class="modal-overlay" id="modal-portfolio">
-      <div class="modal">
-        <button class="modal-close">&times;</button>
-        <h2>Personal Portfolio Website</h2>
-        <div class="modal-meta">
-          <span class="meta-item"
-            ><strong>Role:</strong> Designer + Marketing Portfolio Builder</span
-          >
-          <span class="meta-item"
-            ><strong>Stack:</strong> HTML, CSS, JavaScript, Bootstrap,
-            EmailJS</span
-          >
-        </div>
-
-        <div class="modal-actions">
-          <a
-            href="https://portfolioyashendri.vercel.app"
-            target="_blank"
-            class="btn btn-outline btn-sm"
-            >Live Demo</a
-          >
-          <a
-            href="https://github.com/Yashendri/portfolio_full"
-            target="_blank"
-            class="btn btn-outline btn-sm"
-            >GitHub</a
-          >
-        </div>
-
-        <div class="modal-section">
-          <h4>Project Goal</h4>
-          <p>
-            Build a fast, SEO-friendly personal portfolio that communicates
-            multidisciplinary skills and converts leads.
-          </p>
-          <h4>Target Audience</h4>
-          <p>
-            Hiring managers and internship leads looking for a digital marketing
-            candidate who can present strategy, design, and conversion thinking
-            clearly.
-          </p>
-          <h4>Tools Used</h4>
-          <p>HTML, CSS, JavaScript, EmailJS</p>
-          <h4>My Contribution</h4>
-          <p>
-            Design, conversion-focused page structure, SEO-friendly content, and
-            contact flow implementation to capture internship leads.
-          </p>
-          <h4>Outcome</h4>
-          <p>
-            Minimal, fast portfolio with clear CTAs and measurable leads via
-            email contact form.
-          </p>
-          <h4>Marketing Goal & Funnel Stage</h4>
-          <p>
-            Top-of-funnel awareness through a polished personal brand experience
-            designed to capture recruiter interest and highlight my
-            marketing-ready design thinking.
-          </p>
-          <h4>Result / What I'd Measure</h4>
-          <p>
-            Target metric: click-to-contact rate. Estimated based on portfolio
-            site benchmarks and A/B testing CTA text for stronger lead
-            conversion.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- CookMate Modal -->
-    <div class="modal-overlay" id="modal-cookmate">
-      <div class="modal">
-        <button class="modal-close">&times;</button>
-        <h2>CookMate – Smart Cooking Assistant</h2>
-        <div class="modal-meta">
-          <span class="meta-item"
-            ><strong>Role:</strong> Backend Developer (Firebase)</span
-          >
-          <span class="meta-item"
-            ><strong>Stack:</strong> Node.js, Firebase Authentication, Firestore
-            , React Native</span
-          >
-          <span class="meta-item"
-            ><strong>Download:</strong>
-            <a
-              href="https://github.com/Yashendri/portfolio_full/releases/latest/download/Cookmate_App.apk"
-              download
-              style="color: var(--clr-accent)"
-              >CookMate APK</a
-            ></span
-          >
-        </div>
-
-        <div class="modal-actions">
-          <a
-            href="https://github.com/Yashendri/portfolio_full/releases/latest/download/Cookmate_App.apk"
-            download
-            class="btn btn-outline btn-sm"
-            >Download App</a
-          >
-        </div>
-
-        <div class="modal-section">
-          <h4>Project Goal</h4>
-          <p>
-            Create a personalized cooking assistant that surfaces recipes based
-            on preferences and allergies.
-          </p>
-          <h4>Target Audience</h4>
-          <p>Home cooks seeking personalised recipe suggestions.</p>
-          <h4>Tools Used</h4>
-          <p>Node.js, Firebase, React Native</p>
-          <h4>My Contribution</h4>
-          <p>
-            Built secure email OTP password reset with time-limited codes and
-            anti-enumeration protection, so the system gives an identical
-            response whether or not an email is registered. Implemented Firebase
-            Authentication for sign-up and login, and designed the Firestore
-            structure for user favorite recipes, allergy management preferences,
-            and ratings and reviews. Connected all of this to the frontend pages
-            I developed.
-          </p>
-          <h4>Why This Belongs in a Marketing Portfolio</h4>
-          <p>
-            Marketing work depends on the systems behind it: user accounts,
-            preference data, and profile logic are the same building blocks
-            behind CRM tools, personalized email flows and loyalty programs.
-            This project is where I built and connected that kind of user data
-            infrastructure myself, which is what lets me build the marketing
-            automation logic behind a campaign, not just the landing page in
-            front of it.
-          </p>
-          <h4>Outcome</h4>
-          <p>
-            Improved relevance and retention by prioritizing recipes that match
-            user preferences.
-          </p>
-          <h4>Marketing Goal & Funnel Stage</h4>
-          <p>
-            Bottom-of-funnel retention and repeat engagement through
-            personalized recipe recommendations and frictionless re-entry
-            points.
-          </p>
-          <h4>Result / What I'd Measure</h4>
-          <p>
-            Target metric: repeat-use rate. Estimated based on mobile app
-            engagement benchmarks and personalization lift from filtered recipe
-            suggestions.
-          </p>
-        </div>
-      </div>
-    </div>
+    <!-- ================= MODALS ================= -->
 
     <!-- Stella Fit Modal -->
-    <div class="modal-overlay" id="modal-stella">
+    <div
+      class="modal-overlay"
+      id="modal-stella"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="stella-modal-title"
+    >
       <div class="modal">
-        <button class="modal-close">&times;</button>
-        <h2>Stella Fit — Personal Training Landing Page</h2>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-badge-row">
+          <span class="badge-type concept">Concept Project</span>
+        </div>
+        <h2 id="stella-modal-title">Stella Fit — Landing Page & Marketing Concept</h2>
         <div class="modal-meta">
           <span class="meta-item"
-            ><strong>Role:</strong> Landing Page & Campaign Designer</span
+            ><strong>Role:</strong> Designer & Developer</span
           >
           <span class="meta-item"
-            ><strong>Stack:</strong> HTML, CSS, JavaScript, Claude AI</span
+            ><strong>Tools:</strong> HTML, CSS, JavaScript, Canva, Claude AI</span
           >
         </div>
 
@@ -732,87 +905,69 @@
           <a
             href="https://stellafitlandingpage.netlify.app/"
             target="_blank"
-            class="btn btn-outline btn-sm"
-            >Live Demo</a
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+            >Live Demo ↗</a
           >
         </div>
 
         <div class="modal-section">
-          <h4>Project Goal</h4>
+          <h4>The Idea</h4>
           <p>
-            Deliver a conversion-focused landing page for a personal trainer
-            aimed at discovery calls.
+            A fictional personal training brand created to explore branding, landing-page design, and audience-focused messaging. The goal was to build a clean, approachable page that encourages prospective clients to take the low-friction first step of booking a free discovery call.
           </p>
-          <h4>Target Audience</h4>
+
+          <h4>My Approach</h4>
+          <ul>
+            <li><strong>Created Visual Identity:</strong> Selected a warm, approachable color palette and clean typography to communicate wellness without the intimidating tone of traditional gym marketing.</li>
+            <li><strong>Structured Landing Page Content:</strong> Used a clear Problem–Agitate–Solution (PAS) framework: acknowledging common fitness frustrations, presenting supportive personal training as the solution, and providing clear program details.</li>
+            <li><strong>Designed a Focused CTA:</strong> Positioned "Book a Discovery Call" as a zero-pressure entry point with reassuring micro-copy ("15 minutes • No obligation").</li>
+            <li><strong>Trust Signals & Social Proof:</strong> Designed testimonial card layouts and client progress highlights to illustrate how credibility is built on a service page.</li>
+            <li><strong>Planned A/B Testing Concept:</strong> Formulated an A/B test plan comparing headline and button copy ("Book Your Discovery Call" vs. "Start Your Journey") to evaluate clarity versus emotional appeal.</li>
+            <li><strong>Planned Analytics Events:</strong> Defined specific custom event triggers in GA4 to measure button click-through rate, scroll percentage, and time spent on key sections.</li>
+          </ul>
+
+          <h4>Marketing Thinking</h4>
           <p>
-            Prospective clients seeking personal training services
-            (female-focused).
+            Service-based landing pages must quickly establish psychological safety. For a female-focused personal training offer, high-pressure sales copy often increases friction. Instead, the messaging was crafted around empowerment and sustainable habits, answering common hesitations directly before presenting the booking form.
           </p>
-          <h4>Tools Used</h4>
-          <p>HTML, CSS, JavaScript, Claude AI</p>
-          <h4>My Contribution</h4>
+
+          <h4>Planned Measurement Framework</h4>
           <p>
-            Designed layout, brand messaging, and conversion-focused
-            interactions for paid campaign traffic.
+            <strong>Metrics that would be tracked:</strong>
           </p>
-          <h4>Outcome</h4>
+          <ul>
+            <li><strong>CTA Click Rate:</strong> Percentage of unique visitors clicking the primary discovery call button.</li>
+            <li><strong>Scroll Depth:</strong> Measuring how many visitors reach the program details and pricing breakdown.</li>
+            <li><strong>Form Interaction Rate:</strong> Tracking form start versus form completion to identify potential input friction.</li>
+          </ul>
           <p>
-            Polished, trust-building landing page optimized for conversions from
-            paid traffic.
-          </p>
-          <h4>Marketing Goal & Funnel Stage</h4>
-          <p>
-            Bottom-of-funnel conversion from paid social campaigns, using
-            clarity and trust signals to push discovery call signups.
-          </p>
-          <p>
-            The palette and CTA were chosen to signal approachability and
-            confidence for a female-first audience, while the hero copy leaned
-            into problem-solution clarity. Messaging was tuned for the final
-            consideration stage so users could quickly feel safe booking a
-            discovery call.
-          </p>
-          <p>
-            This followed a PAS structure (Problem–Agitate–Solution): the hero
-            copy names the frustration of feeling punished by traditional
-            training, agitates it briefly by contrasting it with how training
-            *should* feel, then resolves it with the "self-care" positioning and
-            a low-friction CTA into the discovery call.
-          </p>
-          <h4>Result / What I'd Measure</h4>
-          <p>
-            Target metric: landing page signup rate. Estimated based on fitness
-            industry conversion rates and A/B testing headline and CTA
-            placement.
-          </p>
-          <p>
-            <strong>A/B test I'd run:</strong> "Book Your Discovery Call" vs.
-            "Start Your Journey" as the primary CTA copy. The brand positioning
-            ("self-care, not punishment") is emotional, but "Book Your Discovery
-            Call" is clearer about what happens next — the test resolves the
-            tension between emotional resonance and action clarity. I'd track
-            click-through rate on the CTA button via a GA4 event (not just page
-            views), and run it for 1-2 weeks of steady traffic rather than a
-            fixed date, since a small landing page needs time to accumulate
-            enough clicks per variant to mean anything.
+            <em>Note: In this concept project, testing and analytics represent the planning framework and event structure rather than live, statistically significant traffic data.</em>
           </p>
         </div>
       </div>
     </div>
 
     <!-- DropSwift Modal -->
-    <div class="modal-overlay" id="modal-dropswift">
+    <div
+      class="modal-overlay"
+      id="modal-dropswift"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="dropswift-modal-title"
+    >
       <div class="modal">
-        <button class="modal-close">&times;</button>
-        <h2>DropSwift — SaaS Landing Page + Ad Campaign</h2>
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-badge-row">
+          <span class="badge-type concept">Concept Project</span>
+        </div>
+        <h2 id="dropswift-modal-title">DropSwift — Website & Customer Communication Concept</h2>
         <div class="modal-meta">
           <span class="meta-item"
-            ><strong>Role:</strong> Campaign Designer + Landing Page
-            Builder</span
+            ><strong>Role:</strong> Designer & Developer</span
           >
           <span class="meta-item"
-            ><strong>Stack:</strong> HTML, CSS, JavaScript, Canva, Leonardo.ai,
-            Nodemailer</span
+            ><strong>Tools:</strong> HTML, CSS, JavaScript, Canva, Nodemailer</span
           >
         </div>
 
@@ -820,81 +975,427 @@
           <a
             href="https://dropswiftlandingpage.netlify.app/"
             target="_blank"
-            class="btn btn-outline btn-sm"
-            >Live Demo</a
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+            >Live Demo ↗</a
           >
         </div>
 
         <div class="modal-section">
-          <h4>Project Goal</h4>
+          <h4>Visual Customer Journey</h4>
+          <div class="journey-flow-box">
+            <div class="journey-step">
+              <span class="j-num">1</span>
+              <span class="j-title">Ad / First Touch</span>
+              <span class="j-sub">Social Ad Concept</span>
+            </div>
+            <div class="journey-arrow">→</div>
+            <div class="journey-step">
+              <span class="j-num">2</span>
+              <span class="j-title">Landing Page</span>
+              <span class="j-sub">Feature & Value Clarity</span>
+            </div>
+            <div class="journey-arrow">→</div>
+            <div class="journey-step">
+              <span class="j-num">3</span>
+              <span class="j-title">Signup</span>
+              <span class="j-sub">Low-Friction Form</span>
+            </div>
+            <div class="journey-arrow">→</div>
+            <div class="journey-step">
+              <span class="j-num">4</span>
+              <span class="j-title">Welcome Email</span>
+              <span class="j-sub">Day 0 Quick-Win</span>
+            </div>
+            <div class="journey-arrow">→</div>
+            <div class="journey-step">
+              <span class="j-num">5</span>
+              <span class="j-title">Follow-Up</span>
+              <span class="j-sub">Day 3 Objection Handling</span>
+            </div>
+            <div class="journey-arrow">→</div>
+            <div class="journey-step">
+              <span class="j-num">6</span>
+              <span class="j-title">Conversion Message</span>
+              <span class="j-sub">Day 7 Incentive & Action</span>
+            </div>
+          </div>
+
+          <h4>Website Concept & Audience Messaging</h4>
           <p>
-            Design a landing page and ad creative package to drive trial
-            sign-ups for a SaaS product.
+            DropSwift is a fictional SaaS platform that automates order processing and supplier tracking for ecommerce store owners. The project demonstrates how landing-page messaging connects to post-signup email nurturing:
           </p>
-          <h4>Target Audience</h4>
-          <p>eCommerce store owners looking to automate operations.</p>
-          <h4>Tools Used</h4>
-          <p>HTML, CSS, JavaScript, Canva, Leonardo.ai</p>
-          <h4>My Contribution</h4>
+          <ul>
+            <li><strong>Landing Page:</strong> Addresses the core pain point of ecommerce founders: spending repetitive hours on order fulfillment instead of marketing and scaling.</li>
+            <li><strong>Audience Segmentation:</strong> Structured copy to speak to both new solo founders (simplicity & time savings) and growing stores (error reduction & scaling capacity).</li>
+            <li><strong>Conversion Pathways:</strong> Highlighted a simple 14-day trial signup with clear feature breakdowns, automated ROI calculator concept, and FAQ section.</li>
+          </ul>
+
+          <h4>Three-Email Post-Signup Sequence</h4>
           <p>
-            Created campaign messaging, landing page flow, and ad creative to
-            maintain a consistent paid acquisition journey.
+            To explore customer retention and email sequence design, I mapped out and designed three targeted email templates:
           </p>
-          <h4>Outcome</h4>
+          <ul>
+            <li><strong>Email 1 (Day 0 — Welcome & Quick Win):</strong> Welcomes the user, reinforces the decision to sign up, and walks through connecting their first store in under 3 minutes.</li>
+            <li><strong>Email 2 (Day 3 — Overcoming Complexity):</strong> Addresses the primary hesitation ("Will this disrupt my existing store?") by showcasing how simple sync rules work and offering a setup checklist.</li>
+            <li><strong>Email 3 (Day 7 — Conversion & Upgrade):</strong> Highlights the productivity hours saved during the trial and provides a clear incentive to upgrade before trial expiration.</li>
+          </ul>
+
           <p>
-            Landing page and ad assets aligned for cold and retargeting
-            campaigns to improve click-to-signup rates.
-          </p>
-          <h4>Marketing Goal & Funnel Stage</h4>
-          <p>
-            Top-of-funnel awareness and mid-funnel consideration for SaaS
-            buyers, using paid social creative to move users from curiosity to
-            demo interest.
-          </p>
-          <p>
-            The ad variants were designed for different funnel stages: cold
-            traffic sees bold awareness messaging, while warmer audiences get
-            product-benefit copy highlighting quick setup. Palette and CTA
-            choices were meant to signal professional automation for ecommerce
-            owners and reduce friction toward a trial signup. I used AIDA-style
-            sequencing to capture attention, build interest with pain-point
-            relief, and drive action with a clear demo request CTA.
-          </p>
-          <h4>Result / What I'd Measure</h4>
-          <p>
-            Target metric: demo request rate. Estimated based on SaaS landing
-            page benchmarks and creative variation tests for paid social.
+            <em>Note: This sequence is a creative and strategic communication concept; no actual conversion rates or commercial metrics are fabricated.</em>
           </p>
         </div>
 
+        <div class="modal-gallery">
+          <h4>Email Sequence Visual Assets</h4>
+          <div class="gallery-grid">
+            <div class="gallery-card">
+              <img
+                src="./assets/projects/dropswift-email-1-welcome.jpeg"
+                alt="DropSwift Welcome Email"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <span class="gallery-caption">Day 0: Welcome & Quick Win</span>
+            </div>
+            <div class="gallery-card">
+              <img
+                src="./assets/projects/dropswift-email-2-objection.jpeg"
+                alt="DropSwift Objection-Handling Email"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <span class="gallery-caption">Day 3: Objection Handling</span>
+            </div>
+            <div class="gallery-card">
+              <img
+                src="./assets/projects/dropswift-email-3-conversion.jpeg"
+                alt="DropSwift Conversion Email"
+                class="gallery-img"
+                loading="lazy"
+              />
+              <span class="gallery-caption">Day 7: Conversion & Incentive</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Social Media Campaign Modal (New) -->
+    <div
+      class="modal-overlay"
+      id="modal-social"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="social-modal-title"
+    >
+      <div class="modal">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-badge-row">
+          <span class="badge-type concept">Concept Project</span>
+        </div>
+        <h2 id="social-modal-title">Social Media Campaign: Aarya Coastal Retreat & Villas</h2>
+        <div class="modal-meta">
+          <span class="meta-item"
+            ><strong>Brand:</strong> Aarya Coastal Retreat & Villas (Fictional Sri Lankan Boutique Brand)</span
+          >
+          <span class="meta-item"
+            ><strong>Role:</strong> Social Media Strategist & Content Creator</span
+          >
+          <span class="meta-item"
+            ><strong>Tools:</strong> Canva, Content Calendar, Meta Business Suite Concepts</span
+          >
+        </div>
+
         <div class="modal-section">
-          <h4>Post-Signup Email Nurture Sequence</h4>
+          <h4>Brand Overview & Target Audience</h4>
           <p>
-            Built and sent a 3-email sequence to move new signups from first
-            login to paid conversion: a Day 0 welcome email focused on one quick
-            win, a Day 3 objection-handling email addressing the most common
-            hesitation (complexity), and a Day 7 conversion email using urgency
-            and a limited-time incentive.
+            <strong>The Brand:</strong> Aarya Coastal Retreat & Villas is a fictional boutique eco-luxury resort situated along Sri Lanka's serene southern coastline near Mirissa. It emphasizes tropical minimalism, restorative wellness, organic Ceylon culinary experiences, and unhurried coastal living.
+          </p>
+          <p>
+            <strong>Target Audience:</strong>
+          </p>
+          <ul>
+            <li><strong>Mindful International Travelers (Ages 26–45):</strong> Visitors from the UK, Europe, Australia, and GCC seeking quiet luxury, authentic cultural connection, and restorative vacations.</li>
+            <li><strong>Digital Nomads & Remote Creatives:</strong> Individuals looking for inspiring work-friendly spaces with high-speed connectivity and calming ocean views.</li>
+            <li><strong>Local Weekend Escapists:</strong> Professionals in Sri Lanka seeking premium, private staycation retreats.</li>
+          </ul>
+
+          <h4>Campaign Objective</h4>
+          <p>
+            Build pre-season brand awareness, drive engagement around slow travel culture in Southern Sri Lanka, and generate qualified direct inquiries for private villa bookings.
+          </p>
+
+          <h4>Content Pillars</h4>
+          <div class="pillars-grid">
+            <div class="pillar-box">
+              <h5>1. Architecture & Atmosphere</h5>
+              <p>Tropical modernism, open-air courtyards, natural ventilation, and golden-hour light across the villas.</p>
+            </div>
+            <div class="pillar-box">
+              <h5>2. Wellness & Local Culinary</h5>
+              <p>Farm-to-table breakfast spreads, king coconut hydration, Ayurvedic tea rituals, and oceanfront morning yoga.</p>
+            </div>
+            <div class="pillar-box">
+              <h5>3. Slow Travel & Coast Stories</h5>
+              <p>Secret coves in Southern Sri Lanka, mindful travel guides, and supporting local artisanal fishermen and craftsmen.</p>
+            </div>
+            <div class="pillar-box">
+              <h5>4. Experience & Direct Booking</h5>
+              <p>Exclusive villa features, private chef dining options, seasonal retreat packages, and clear booking guidance.</p>
+            </div>
+          </div>
+
+          <h4>10-Day Content Calendar (Concept)</h4>
+          <div class="table-responsive">
+            <table class="calendar-table">
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Format</th>
+                  <th>Pillar</th>
+                  <th>Hook / Concept</th>
+                  <th>Call-to-Action</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>Day 1</strong></td>
+                  <td><span class="cal-format reel">Reel</span></td>
+                  <td>Atmosphere</td>
+                  <td>"Sunrise at Aarya: Ocean mist, fresh king coconut & quiet architecture"</td>
+                  <td>Save this for your next Sri Lanka escape</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 2</strong></td>
+                  <td><span class="cal-format carousel">Carousel</span></td>
+                  <td>Slow Travel</td>
+                  <td>"5 Quiet Coastal Corners in Southern Sri Lanka Most Tourists Miss"</td>
+                  <td>Bookmark for your travel itinerary</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 3</strong></td>
+                  <td><span class="cal-format story">Stories</span></td>
+                  <td>Wellness</td>
+                  <td>Interactive poll: "Morning beach walk or sunrise courtyard yoga?" + Q&A box</td>
+                  <td>Vote & share your morning routine</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 4</strong></td>
+                  <td><span class="cal-format post">Static Post</span></td>
+                  <td>Culinary</td>
+                  <td>"From our organic garden to your table: Ceylon breakfast bowl spotlight"</td>
+                  <td>Tag someone you'd share this breakfast with</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 5</strong></td>
+                  <td><span class="cal-format reel">Reel</span></td>
+                  <td>Architecture</td>
+                  <td>"POV: Checking into your ocean-view pool villa at golden hour"</td>
+                  <td>Send to who you're traveling with next</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 6</strong></td>
+                  <td><span class="cal-format carousel">Carousel</span></td>
+                  <td>Experience</td>
+                  <td>"Why Slow Travel Resets Your Nervous System: The Aarya Philosophy"</td>
+                  <td>Tap the link in bio to read our retreat guide</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 7</strong></td>
+                  <td><span class="cal-format story">Stories</span></td>
+                  <td>Experience</td>
+                  <td>Room tour snippet + countdown sticker for Season Opening packages</td>
+                  <td>Tap link sticker to view villa availability</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 8</strong></td>
+                  <td><span class="cal-format post">Static Post</span></td>
+                  <td>Slow Travel</td>
+                  <td>"A love letter to Southern Sri Lanka’s quiet fishing harbours"</td>
+                  <td>Tell us your favorite coastal memory</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 9</strong></td>
+                  <td><span class="cal-format reel">Reel</span></td>
+                  <td>Wellness</td>
+                  <td>"Evening sound bath: Wind through palm leaves & distant ocean surf" (ASMR)</td>
+                  <td>Save for when you need a moment of calm</td>
+                </tr>
+                <tr>
+                  <td><strong>Day 10</strong></td>
+                  <td><span class="cal-format carousel">Carousel</span></td>
+                  <td>Booking Offer</td>
+                  <td>"Plan Your Restorative Stay: Season Retreat Inclusions & Private Booking"</td>
+                  <td>Direct message us 'RETREAT' for details</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h4>Instagram Post Concepts & Copy Samples</h4>
+          <div class="post-samples-grid">
+            <div class="post-sample-card">
+              <h5>Carousel Concept: Slow Travel in Sri Lanka</h5>
+              <p class="sample-label">Slide 1 (Cover):</p>
+              <p class="sample-text"><em>"5 reasons why slow travel in Southern Sri Lanka resets your mind. (Swipe →)"</em></p>
+              <p class="sample-label">Slide 2–5:</p>
+              <p class="sample-text">Focusing on circadian sleep schedules near the ocean, seasonal nutrition, barefoot architecture, and screen-free mornings.</p>
+              <p class="sample-label">Caption & Hashtags:</p>
+              <p class="sample-text">
+                "True luxury isn't rushing from landmark to landmark—it's having the space to listen to the ocean mist and enjoy your morning tea without a notification. Link in bio to discover Aarya.<br />
+                <span class="hashtag-text">#SriLankaTravel #SlowTravelSriLanka #BoutiqueVillaSriLanka #Mirissa #SouthernProvince #TravelSriLanka #MindfulTravel</span>"
+              </p>
+            </div>
+
+            <div class="post-sample-card">
+              <h5>Meta Ad Concept (Paid Social)</h5>
+              <p class="sample-label">Ad Format: Single Image + Carousel Variation</p>
+              <p class="sample-text"><strong>Headline:</strong> Find Your Stillness on Sri Lanka's Southern Coast</p>
+              <p class="sample-text"><strong>Primary Text:</strong> "Private pool villas, organic Ceylon dining, and untouched coastal tranquility. Book directly with Aarya Retreat & Villas for seasonal perks and personalized wellness itineraries."</p>
+              <p class="sample-label">Suggested Targeting:</p>
+              <ul>
+                <li>Locations: Sri Lanka, United Kingdom, Australia, Germany, UAE.</li>
+                <li>Demographics: Ages 25–54, All Genders.</li>
+                <li>Interests: Boutique hotels, Eco-luxury tourism, Wellness retreats, Sri Lanka travel, Architecture design.</li>
+              </ul>
+              <p class="sample-text"><strong>Call to Action:</strong> Check Availability / Learn More</p>
+            </div>
+          </div>
+
+          <h4>Metrics I Would Track</h4>
+          <p>
+            To evaluate social performance honestly, I would track the following KPIs using Meta Business Suite and Google Analytics 4:
+          </p>
+          <ul>
+            <li><strong>Reach & Impressions:</strong> Monitoring organic discovery across explore feeds and reels.</li>
+            <li><strong>Engagement Rate:</strong> Tracking comment depth, saves, and shares as primary indicators of content value.</li>
+            <li><strong>Link Clicks & CTR:</strong> Tracking traffic directed to the villa booking page via profile link and stories stickers.</li>
+            <li><strong>Save Rate:</strong> Especially critical for travel guides and carousel itinerary tips.</li>
+            <li><strong>Direct Message Inquiries:</strong> Measuring qualified leads inquiring about rates and seasonal availability.</li>
+          </ul>
+          <p>
+            <em>Note: This is an authentic campaign concept created to demonstrate social media strategy and execution skills; no simulated traffic numbers or fictional ROAS stats are claimed.</em>
           </p>
         </div>
-        <div class="modal-gallery">
-          <div class="gallery-grid">
-            <img
-              src="./assets/projects/dropswift-email-1-welcome.jpeg"
-              alt="DropSwift Welcome Email"
-              class="gallery-img"
-            />
-            <img
-              src="./assets/projects/dropswift-email-2-objection.jpeg"
-              alt="DropSwift Objection-Handling Email"
-              class="gallery-img"
-            />
-            <img
-              src="./assets/projects/dropswift-email-3-conversion.jpeg"
-              alt="DropSwift Conversion Email"
-              class="gallery-img"
-            />
-          </div>
+      </div>
+    </div>
+
+    <!-- Personal Portfolio Modal -->
+    <div
+      class="modal-overlay"
+      id="modal-portfolio"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="portfolio-modal-title"
+    >
+      <div class="modal">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-badge-row">
+          <span class="badge-type personal">Personal Project</span>
+        </div>
+        <h2 id="portfolio-modal-title">Personal Portfolio Website</h2>
+        <div class="modal-meta">
+          <span class="meta-item"
+            ><strong>Role:</strong> Designer & Developer</span
+          >
+          <span class="meta-item"
+            ><strong>Tools:</strong> HTML, CSS, JavaScript, Google Analytics 4, Node.js</span
+          >
+        </div>
+
+        <div class="modal-actions">
+          <a
+            href="https://portfolioyashendri.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary btn-sm"
+            >Live Demo ↗</a
+          >
+          <a
+            href="https://github.com/Yashendri/portfolio_full"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline btn-sm"
+            >GitHub Repository ↗</a
+          >
+        </div>
+
+        <div class="modal-section">
+          <h4>Project Objective</h4>
+          <p>
+            Build a fast, lightweight, and responsive portfolio to present my journey from Computer Science into digital marketing, creative content, and digital experiences.
+          </p>
+
+          <h4>Key Implementation Highlights</h4>
+          <ul>
+            <li><strong>Visual Design System:</strong> Implemented CSS custom properties for seamless dark plum and light mode switching, refined typographic hierarchy, and responsive fluid layouts.</li>
+            <li><strong>On-Page SEO Fundamentals:</strong> Applied semantic HTML5 structure, structured Open Graph meta tags for social link previews, descriptive alt attributes, and clean heading hierarchy.</li>
+            <li><strong>Google Analytics 4 Integration:</strong> Integrated GA4 tag (G-NEQ3XWG5LH) to observe real visitor traffic, acquisition sources, and button engagement.</li>
+            <li><strong>Accessible & Responsive:</strong> Ensured full usability across mobile, tablet, and desktop screens with accessible keyboard navigation and modal dialogs.</li>
+            <li><strong>Contact Architecture:</strong> Developed a functional contact mechanism with email validation and a dedicated server endpoint.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- CookMate Modal -->
+    <div
+      class="modal-overlay"
+      id="modal-cookmate"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="cookmate-modal-title"
+    >
+      <div class="modal">
+        <button class="modal-close" aria-label="Close modal">&times;</button>
+        <div class="modal-badge-row">
+          <span class="badge-type team">Academic / Team Project</span>
+        </div>
+        <h2 id="cookmate-modal-title">CookMate – Smart Cooking Assistant</h2>
+        <div class="modal-meta">
+          <span class="meta-item"
+            ><strong>Role:</strong> Backend Developer (Team Project)</span
+          >
+          <span class="meta-item"
+            ><strong>Tools:</strong> React Native, TypeScript, Node.js, Firebase, Firestore</span
+          >
+        </div>
+
+        <div class="modal-actions">
+          <a
+            href="https://github.com/Yashendri/portfolio_full/releases/latest/download/Cookmate_App.apk"
+            download
+            class="btn btn-primary btn-sm"
+            >Download APK ↗</a
+          >
+          <a
+            href="https://github.com/Yashendri/portfolio_full"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-outline btn-sm"
+            >GitHub ↗</a
+          >
+        </div>
+
+        <div class="modal-section">
+          <h4>Project Overview</h4>
+          <p>
+            CookMate is an Android culinary application developed as a team project for our university coursework. The mobile app helps users discover recipes based on dietary restrictions, ingredients on hand, and personal allergy preferences.
+          </p>
+
+          <h4>My Technical Contributions</h4>
+          <ul>
+            <li><strong>User Authentication:</strong> Implemented Firebase Authentication with email/password and Google Sign-In.</li>
+            <li><strong>Secure Password Reset:</strong> Engineered a secure email OTP password reset mechanism with time-limited codes in Firestore and anti-enumeration security, preventing user account discovery.</li>
+            <li><strong>Database Schema & Preferences:</strong> Designed Firestore document models for user profiles, saved favorites, allergy filters, and ratings/reviews.</li>
+            <li><strong>Team Collaboration:</strong> Collaborated via Git and GitHub with pull requests, code reviews, and structured branch management.</li>
+          </ul>
+
+          <h4>Relevance to Digital & Marketing Roles</h4>
+          <p>
+            Building authentication, user database schemas, and preference filtering gave me first-hand experience in the data infrastructure behind digital products—the exact same principles behind CRM segmentation, subscriber databases, and personalized user communication.
+          </p>
         </div>
       </div>
     </div>
