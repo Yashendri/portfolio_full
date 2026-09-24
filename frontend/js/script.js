@@ -10,10 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // -------------------------------------------------------------------------
     const faders = document.querySelectorAll('.fade-in');
 
-    if ('IntersectionObserver' in window) {
+    // On mobile devices, immediately reveal all faders to avoid observer calculation lags
+    if (window.innerWidth <= 768) {
+        faders.forEach(fader => fader.classList.add('appear'));
+    } else if ('IntersectionObserver' in window) {
         const appearOptions = {
-            threshold: 0.12,
-            rootMargin: '0px 0px -40px 0px'
+            threshold: 0.02,
+            rootMargin: '0px 0px 80px 0px'
         };
 
         const appearOnScroll = new IntersectionObserver((entries, observer) => {
@@ -26,6 +29,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }, appearOptions);
 
         faders.forEach(fader => appearOnScroll.observe(fader));
+
+        // Quick fallback check for elements already near viewport
+        const checkInitial = () => {
+            const bottomEdge = window.innerHeight + 100;
+            faders.forEach(fader => {
+                const rect = fader.getBoundingClientRect();
+                if (rect.top < bottomEdge) {
+                    fader.classList.add('appear');
+                }
+            });
+        };
+        checkInitial();
+        window.addEventListener('resize', checkInitial, { passive: true });
     } else {
         // Fallback for older browsers
         faders.forEach(fader => fader.classList.add('appear'));

@@ -2098,6 +2098,13 @@ textarea.form-control {
     --section-padding: 3.5rem 0;
   }
 
+  /* Ensure all content is immediately visible on mobile devices without scroll observer delays */
+  .fade-in {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
   .hero {
     padding-top: 6.5rem;
     padding-bottom: 3.5rem;
